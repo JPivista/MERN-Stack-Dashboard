@@ -1,0 +1,12 @@
+{
+    "name": "mern-app",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "client": "npm --prefix frontend start",
+        "server": "npm --prefix server start"
+    },
+    "dependencies": {
+        "concurrently": "^6.5.1"
+    }
+}
